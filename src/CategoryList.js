@@ -23,8 +23,8 @@ export default class CategoryList extends Component {
         <div className="py-4">
           <ul>
             {this.state.categories.map((category) => (
-              <li
-                className="border border-black-600 py-2"
+               <li //style={{backgroundColor: category.categoryName === this.props.currentCategory?'bg-blue-500':''}}
+                className="border border-black-600 py-2 bg "
                 onClick={() => this.props.changeCategory(category)}
                 key={category.id}
               >
